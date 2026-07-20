@@ -64,21 +64,31 @@ Trained at 42 Paris through a project-based curriculum (systems, networking, sof
 
 | Project | What it does | Stack |
 |---|---|---|
-| [**Inception-of-Things**](https://github.com/zaboulaza) | Kubernetes cluster (K3s) on VM with GitOps CI/CD via ArgoCD | `Kubernetes` `K3s` `ArgoCD` |
-| [**ft_transcendence**](https://github.com/zaboulaza) | Full-stack SPA with React, PostgreSQL, Docker and CI/CD pipeline | `React` `TypeScript` `Docker` `GitHub Actions` |
-| [**Cloud-1**](https://github.com/zaboulaza) | Cloud infrastructure deployment with automation and Linux hardening | `AWS` `Linux` `Bash` |
-| [**Inception**](https://github.com/zaboulaza) | Private containerized infrastructure — Nginx + TLS, WordPress, MariaDB | `Docker` `Nginx` `MariaDB` |
-| [**Webserv**](https://github.com/zaboulaza) | HTTP/1.1 server from scratch in C++ with I/O multiplexing | `C++` `HTTP` `epoll` |
+| **Inception-of-Things** | Kubernetes cluster (K3s) on VM with GitOps CI/CD via ArgoCD | `Kubernetes` `K3s` `ArgoCD` |
+| **ft_transcendence** | Full-stack SPA with React, PostgreSQL, Docker and CI/CD pipeline | `React` `TypeScript` `Docker` `GitHub Actions` |
+| **Cloud-1** | Cloud infrastructure deployment with automation and Linux hardening | `AWS` `Linux` `Bash` |
+| **Inception** | Private containerized infrastructure — Nginx + TLS, WordPress, MariaDB | `Docker` `Nginx` `MariaDB` |
+| **Webserv** | HTTP/1.1 server from scratch in C++ with I/O multiplexing | `C++` `HTTP` `epoll` |
 
 ---
 
 ### 🏗️ How I work
 
-```
-Spec → Design → Containerize → CI/CD → Deploy → Observe → iterate
+```mermaid
+graph LR
+  A[Spec] --> B[Design]
+  B --> C[Containerize]
+  C --> D[CI/CD]
+  D --> E[Deploy]
+  E --> F[Observe]
+  F --> A
+  style A fill:#0A66C2,stroke:#fff,color:#fff
+  style C fill:#7B42BC,stroke:#fff,color:#fff
+  style D fill:#2088FF,stroke:#fff,color:#fff
+  style F fill:#E6522C,stroke:#fff,color:#fff
 ```
 
-I ship systems that are **automated, reproducible, and observable**.
+I ship systems that are **automated, reproducible, and observable** — not click-ops.
 
 ---
 
